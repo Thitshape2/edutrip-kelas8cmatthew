@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPS - Edutrip</title>
+    <style>
+        /* Reset CSS */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling untuk navigasi */
+        nav {
+            background-color: rgba(45, 23, 5, 0.9); /* Warna coklat tua dengan transparansi */
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: antiquewhite;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: aquamarine;
+        }
+
+        /* Styling untuk IPS Section */
+        .ips-section {
+            height: 100vh; /* Tinggi penuh layar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4; /* Warna latar belakang fallback */
+            margin-top: 60px; /* Memberi ruang untuk navigasi */
+        }
+
+        .ips-section img {
+            max-width: 100%; /* Gambar menyesuaikan lebar layar */
+            max-height: 100%; /* Gambar menyesuaikan tinggi layar */
+            object-fit: contain; /* Gambar tidak terdistorsi */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bar Navigasi -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pkn.html">PPKN</a>
+        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+        <a href="bahasainggris.html">Bahasa Inggris</a>
+        <a href="ips.html">IPS</a>
+        <a href="bahasamandarin.html">Bahasa Mandarin</a>
+    </nav>
+
+    <!-- IPS Section (Only Image) -->
+    <div class="ips-section">
+        <img src="IPS.jpg">
+    </div>
+</body>
+</html>

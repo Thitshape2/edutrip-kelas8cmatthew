@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKN - Edutrip</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Style Navigasi */
+        nav {
+            background-color: #2d1705;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: antiquewhite;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: aquamarine;
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        /* Style Konten */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2d1705;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .info-section {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .photo-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .photo-box {
+            height: 250px;
+            background-color: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo-placeholder {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h2 {
+            color: #2d1705;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2d1705;
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        /* Responsif */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            nav li {
+                margin: 5px 10px;
+            }
+            
+            .photo-box {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bahasainggris.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="bahasamandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <header>
+            <h1>Pendidikan Pancasila</h1>
+        </header>
+        
+        <div class="content-wrapper">
+            <!-- Bagian Informasi -->
+            <section class="info-section">
+                <h2>Tugas PKN</h2>
+                <p>Chiang Kai Shek merupakan orang yang bersejarah bagi keperjuangan di Taiwan dan di dalam tempat itu ada patung perak Chiang Kai Shek dan sejarah mulai dari baju, mobil, dan bukti-bukti bahwa Taiwan merupakan negara, beliau membentuk Taiwan sebagai negara modern terutama setelah berakirnya perang saudara Tiongkok dan pengungsian pemerintah republik Tiongkok (R.O.C). Ia bersama rezim kuotimanya (KMT) memainkan peran sentral dalam membangun persatuan dan identitas nasional di Taiwan setelah pemerintah republik Tiongkok.</p>
+            </section>
+            
+            <!-- Bagian Foto -->
+            <section class="photo-section">
+                <h2>Foto</h2>
+                <div class="photo-box">
+                    <div class="photo-placeholder">
+                  <img src="Memorial Hall.jpg" alt="Foto Luar Chiang Kai Shek Memorial Hall"> 
+                    </div>
+                    <!-- Contoh gambar aktif: -->
+                    <!-- <img src="images/pkn1.jpg" alt="Kegiatan Belajar PKN"> -->
+                </div>
+                <div class="photo-box">
+                    <div class="photo-placeholder">
+                    <img src ="Memorial hall 2.jpg" alt="Gate Masuk Chiang Kai Shek Memorial Hall">
+                    </div>
+                    <!-- Contoh gambar aktif: -->
+                    <!-- <img src="images/pkn2.jpg" alt="Diskusi Kelompok PKN"> -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
